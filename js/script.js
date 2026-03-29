@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         disableOnInteraction: false,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.heroSwiper .swiper-pagination',
         clickable: true,
       },
       effect: 'fade',
