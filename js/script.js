@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Menu Toggle
+  // Mobile Menu Toggle (hamburger toggles open state for future overlay)
   const mobileMenuBtn = document.getElementById('mobile-menu');
-  const navLinks = document.getElementById('nav-links');
 
   if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
       mobileMenuBtn.classList.toggle('open');
     });
   }

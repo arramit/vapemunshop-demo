@@ -27,22 +27,53 @@
 
   <!-- Header / Nav -->
   <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <div class="logo">
-        <a href="#">Vapemun</a>
+    <div class="nav-pill">
+
+      <!-- Top row: hamburger | logo | icons -->
+      <div class="nav-top">
+        <button class="menu-toggle" id="mobile-menu" aria-label="Open menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="logo">
+          <a href="#">Vapemun</a>
+        </div>
+
+        <!-- Desktop: center nav links -->
+        <nav class="nav-links" id="nav-links">
+          <a href="#" class="nav-link active">DEVICE</a>
+          <a href="#" class="nav-link">PODS</a>
+          <a href="#" class="nav-link">FLAVORS</a>
+          <a href="#" class="nav-link">KITS</a>
+          <a href="#" class="nav-link">BESTSELLERS</a>
+        </nav>
+
+        <!-- Search + Cart icons -->
+        <div class="nav-icons">
+          <button class="nav-icon-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="m21 21-4.35-4.35"/>
+            </svg>
+          </button>
+          <button class="nav-icon-btn" aria-label="Cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linejoin="round" d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+          </button>
+        </div>
       </div>
-      <nav class="nav-links" id="nav-links">
-        <a href="#" class="nav-link active">DEVICE</a>
-        <a href="#" class="nav-link">PODS</a>
-        <a href="#" class="nav-link">FLAVORS</a>
-        <a href="#" class="nav-link">KITS</a>
-        <a href="#" class="nav-link">BESTSELLERS</a>
+
+      <!-- Mobile: always-visible secondary nav row -->
+      <nav class="nav-secondary">
+        <a href="#" class="nav-sec-link active">DEVICE</a>
+        <a href="#" class="nav-sec-link">PODS</a>
+        <a href="#" class="nav-sec-link">FLAVORS</a>
+        <a href="#" class="nav-sec-link">KITS</a>
+        <a href="#" class="nav-sec-link">BESTSELLERS</a>
       </nav>
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+
     </div>
   </header>
 
