@@ -936,7 +936,11 @@ a:hover {
   }
 
   .product-name {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .product-shelf {
+    margin-bottom: 25px;
   }
 
   .product-actions {
