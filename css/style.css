@@ -141,15 +141,19 @@ a:hover {
   position: fixed;
   top: 16px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0);
   width: calc(100% - 40px);
   max-width: 1180px;
   z-index: 1000;
-  transition: top 0.3s ease;
+  transition: top 0.3s ease, transform 0.35s ease;
 }
 
 .navbar.scrolled {
   top: 8px;
+}
+
+.navbar.nav-hidden {
+  transform: translateX(-50%) translateY(calc(-100% - 32px));
 }
 
 .nav-pill {

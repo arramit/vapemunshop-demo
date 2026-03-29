@@ -8,15 +8,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Sticky Header Effect
+  // Navbar hide/show on scroll direction
   const navbar = document.getElementById('navbar');
+  let lastScrollY = window.scrollY;
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
+    const currentScrollY = window.scrollY;
+
+    // Add .scrolled when past the initial position
+    navbar.classList.toggle('scrolled', currentScrollY > 50);
+
+    // Hide when scrolling down (past 100px), show when scrolling up
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      navbar.classList.add('nav-hidden');
     } else {
-      navbar.classList.remove('scrolled');
+      navbar.classList.remove('nav-hidden');
     }
-  });
+
+    lastScrollY = currentScrollY;
+  }, { passive: true });
 
   // Simple floating animation logic for images
   const floatingImages = document.querySelectorAll('.floating, .floating-slow');
