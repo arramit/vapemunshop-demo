@@ -63,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize New Arrivals Swiper
     const newArrivalsSwiper = new Swiper('.newArrivalsSwiper', {
-      slidesPerView: 1.7,
+      slidesPerView: 1.4,   // mobile: ~71% active + clear peek on each side
       centeredSlides: true,
       loop: true,
-      spaceBetween: 15,
+      spaceBetween: 16,
       pagination: {
         el: '.newArrivalsSwiper .swiper-pagination',
         clickable: true,

@@ -462,6 +462,32 @@ a:hover {
   transform: scale(1); /* Full size for the centered item */
 }
 
+/* Mobile: full-viewport peek carousel */
+@media (max-width: 767px) {
+  .new-arrivals {
+    overflow: hidden; /* Clip peek slides at section edges */
+  }
+
+  .new-arrivals .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .new-arrivals .section-header {
+    padding: 0 20px; /* Restore title indent */
+  }
+
+  .newArrivalsSwiper {
+    overflow: visible !important; /* Let adjacent slides bleed outside swiper bounds */
+  }
+
+  /* Make peek slides more visible so users notice them */
+  .newArrivalsSwiper .swiper-slide {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+}
+
 .product-showcase {
   max-width: 600px;
   margin: 0 auto;
